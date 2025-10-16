@@ -7,8 +7,8 @@ def partition(k, n, p):
     # Base Case
     if k < 1 or n < 1: return p
     elif k == n: return p + 1
-    #elif n <= 1: return p
     # Recursive Call
     else: return partition(k-1, n-1, p) + partition(k, n-k, p)
+
 
 print(partition(3, 100, 0))
